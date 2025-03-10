@@ -1,0 +1,18 @@
+services:
+  user-identifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4090:4090"
+    environment:
+      # Configure some sample tokens
+      USER_TOKENS: >-
+        {
+          "example-token": {"user_id": 1000, "has_subscription": true}
+        }
+      # You can also configure an individual token
+      # VALID_TOKEN: "special_token"
+      # USER_ID: "9999"
+      # HAS_SUBSCRIPTION: "true"
+    restart: unless-stopped

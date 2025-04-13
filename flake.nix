@@ -38,7 +38,7 @@
         };
 
         apps = rec {
-          faux-user-identifier = flake-utils.lib.mkApp { drv = self.packages.${system}.leng; };
+          faux-user-identifier = flake-utils.lib.mkApp { drv = self.packages.${system}.faux-user-identifier; };
           default = faux-user-identifier;
         };
 

@@ -23,6 +23,12 @@
 
             bunNix = ./bun.nix;
 
+            buildFlags = [
+              "--compile"
+              "--minify"
+              "--sourcemap"
+            ];
+
             index = ./index.ts;
           };
 

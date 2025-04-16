@@ -8,7 +8,7 @@ Lightweight drop-in replacement for [user-identifier](https://github.com/pebble-
 Clone the git repo and `cd` into it:
 
 ```
-git clone https://github.com/negatethis/faux-user-identifier
+git clone https://github.com/jplexer/faux-user-identifier
 cd faux-user-identifier
 ```
 
@@ -25,7 +25,7 @@ docker compose up -f compose.yml -d
 If you are using Nix and have the Flakes experimental feature activated, you can run the server with the following command:
 
 ```nix
-nix run github:negatethis/faux-user-identifier
+nix run github:jplexer/faux-user-identifier
 ```
 
 There is also a NixOS module exposed through the `flake.nix`. Here is an example on how to add it to your system's `flake.nix`:
@@ -34,7 +34,7 @@ There is also a NixOS module exposed through the `flake.nix`. Here is an example
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    faux-user-identifier.url = "github:negatethis/faux-user-identifier";
+    faux-user-identifier.url = "github:jplexer/faux-user-identifier";
   };
 
   outputs = { self, nixpkgs, faux-user-identifier, }: {
@@ -74,7 +74,3 @@ HAS_SUBSCRIPTION="true"
 ```
 
 You can find your Rebble user token by checking the `href` value of the "Switch to Rebble" button at the [Rebble boot page](https://boot.rebble.io/).
-
-## Afterward
-
-Now that you have `faux-user-identifier` set up, you can host your own instance of the Bobby Assistant server. A non-official, [nix-ready fork of the official Bobby Assistant server](https://github.com/negatethis/bobby-assistant/tree/nix-flake) is available.

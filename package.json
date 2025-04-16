@@ -1,8 +1,5 @@
 {
   "name": "faux-user-identifier",
-  "scripts": {
-    "postinstall": "bun2nix -o bun.nix"
-  },
   "module": "index.ts",
   "type": "module",
   "private": true,

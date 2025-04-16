@@ -7,15 +7,15 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1744639323,
-        "narHash": "sha256-+XEpJufYolqrI7aGZcMF0xU47NmIk3IEIAefYSBz2RA=",
-        "owner": "negatethis",
+        "lastModified": 1744817396,
+        "narHash": "sha256-6CWq693Ne6lJ4VDp0h2AglD8X5v5/4arTw90U7u1xBU=",
+        "owner": "baileyluTCD",
         "repo": "bun2nix",
-        "rev": "5f47fe1b7edbda2f106c57d50c1c6025e8b3f812",
+        "rev": "7a3c21134edc1cc3a7f7e31e835d053d907ec447",
         "type": "github"
       },
       "original": {
-        "owner": "negatethis",
+        "owner": "baileyluTCD",
         "repo": "bun2nix",
         "type": "github"
       }
